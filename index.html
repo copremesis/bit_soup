@@ -51,10 +51,6 @@
 
     $.get('amenities.json', function(amenities) { //get access to our model pass back from ajax call
       
-
-
-      amenities_flags = new bigInt(0); //property with now amenities selected
-
       //build a checkbox list off of the amenities
       var markup = amenities.map(function(amenity) {
           //console.log(amenity.name, as_bits(amenity.flag_value), amenity.flag_value);
