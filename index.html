@@ -22,7 +22,7 @@
 
     <div class='floaty'>
       amenity flags (aka shopping cart) <br>
-      <input id="amenities_for_this_site" value='0' name="hypothetical_value_of_site" size=100> 
+      <input type=number id="amenities_for_this_site" value='0' name="hypothetical_value_of_site" size=100> 
       <div id="the_flags_in_binary"> binary string matching checkboxes selected: <br></div>
     </div>
   </body>
@@ -74,9 +74,13 @@
       $("#amenities_for_this_site").on('change', function() { 
          var knobs = $('input[type=checkbox]'), counter = 0;
 
-         as_bits(parseInt($(this).val())).split('').map(function(bit) {   
+         var sum = as_bits(parseInt($(this).val()));
+
+         sum.split('').map(function(bit) {   
            knobs[counter++].checked = (bit == 1)? true : false;
          });
+
+         $('#the_flags_in_binary').html(sum); //the binary representation
       });
       
       //changing a checkbox will recompute the value of the cumulative flags
