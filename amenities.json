@@ -1,0 +1,338 @@
+[
+    {
+        "created_at": "2014-12-13T23:07:40.767Z",
+        "flag_value": 1,
+        "id": 1,
+        "name": "100 amps",
+        "type_flags": 3,
+        "updated_at": "2014-12-13T23:07:40.767Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.771Z",
+        "flag_value": 2,
+        "id": 2,
+        "name": "20 amps",
+        "type_flags": 3,
+        "updated_at": "2014-12-13T23:07:40.771Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.774Z",
+        "flag_value": 4,
+        "id": 3,
+        "name": "30 amps",
+        "type_flags": 3,
+        "updated_at": "2014-12-13T23:07:40.774Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.776Z",
+        "flag_value": 8,
+        "id": 4,
+        "name": "50 amps",
+        "type_flags": 3,
+        "updated_at": "2014-12-13T23:07:40.776Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.779Z",
+        "flag_value": 16,
+        "id": 5,
+        "name": "A/C",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.779Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.784Z",
+        "flag_value": 32,
+        "id": 6,
+        "name": "ADA Accessible",
+        "type_flags": 5,
+        "updated_at": "2014-12-13T23:07:40.784Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.787Z",
+        "flag_value": 64,
+        "id": 7,
+        "name": "BBQ",
+        "type_flags": 3,
+        "updated_at": "2014-12-13T23:07:40.787Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.790Z",
+        "flag_value": 128,
+        "id": 8,
+        "name": "Back up",
+        "type_flags": 1,
+        "updated_at": "2014-12-13T23:07:40.790Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.792Z",
+        "flag_value": 256,
+        "id": 9,
+        "name": "Cable",
+        "type_flags": 5,
+        "updated_at": "2014-12-13T23:07:40.792Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.795Z",
+        "flag_value": 512,
+        "id": 10,
+        "name": "Dishes/Silverware",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.795Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.798Z",
+        "flag_value": 1024,
+        "id": 11,
+        "name": "Drinking Water",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.798Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.801Z",
+        "flag_value": 2048,
+        "id": 12,
+        "name": "Dump Station",
+        "type_flags": 1,
+        "updated_at": "2014-12-13T23:07:40.801Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.804Z",
+        "flag_value": 4096,
+        "id": 13,
+        "name": "Electricity",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.804Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.806Z",
+        "flag_value": 8192,
+        "id": 14,
+        "name": "Fire pit",
+        "type_flags": 7,
+        "updated_at": "2014-12-13T23:07:40.806Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.809Z",
+        "flag_value": 16384,
+        "id": 15,
+        "name": "Fridge",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.809Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.811Z",
+        "flag_value": 32768,
+        "id": 16,
+        "name": "Furnished",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.811Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.814Z",
+        "flag_value": 65536,
+        "id": 17,
+        "name": "Grills",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.814Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.817Z",
+        "flag_value": 131072,
+        "id": 18,
+        "name": "Heating",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.817Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.819Z",
+        "flag_value": 262144,
+        "id": 19,
+        "name": "Internet",
+        "type_flags": 5,
+        "updated_at": "2014-12-13T23:07:40.819Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.822Z",
+        "flag_value": 524288,
+        "id": 20,
+        "name": "Lighting",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.822Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.824Z",
+        "flag_value": 1048576,
+        "id": 21,
+        "name": "Linens",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.824Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.827Z",
+        "flag_value": 2097152,
+        "id": 22,
+        "name": "Microwave",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.827Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.830Z",
+        "flag_value": 4194304,
+        "id": 23,
+        "name": "Oven",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.830Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.837Z",
+        "flag_value": 8388608,
+        "id": 24,
+        "name": "Paved Roads",
+        "type_flags": 1,
+        "updated_at": "2014-12-13T23:07:40.837Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.840Z",
+        "flag_value": 16777216,
+        "id": 25,
+        "name": "Pets",
+        "type_flags": 5,
+        "updated_at": "2014-12-13T23:07:40.840Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.842Z",
+        "flag_value": 33554432,
+        "id": 26,
+        "name": "Picnic Table",
+        "type_flags": 7,
+        "updated_at": "2014-12-13T23:07:40.842Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.845Z",
+        "flag_value": 67108864,
+        "id": 27,
+        "name": "Primitive",
+        "type_flags": 2,
+        "updated_at": "2014-12-13T23:07:40.845Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.847Z",
+        "flag_value": 134217728,
+        "id": 28,
+        "name": "Private",
+        "type_flags": 7,
+        "updated_at": "2014-12-13T23:07:40.847Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.850Z",
+        "flag_value": 268435456,
+        "id": 29,
+        "name": "Pull through",
+        "type_flags": 1,
+        "updated_at": "2014-12-13T23:07:40.850Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.852Z",
+        "flag_value": 536870912,
+        "id": 30,
+        "name": "Range",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.852Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.855Z",
+        "flag_value": 1073741824,
+        "id": 31,
+        "name": "Restrooms",
+        "type_flags": 7,
+        "updated_at": "2014-12-13T23:07:40.855Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.857Z",
+        "flag_value": 2147483648,
+        "id": 32,
+        "name": "Running Water",
+        "type_flags": 7,
+        "updated_at": "2014-12-13T23:07:40.857Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.860Z",
+        "flag_value": 4294967296,
+        "id": 33,
+        "name": "Satellite",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.860Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.863Z",
+        "flag_value": 8589934592,
+        "id": 34,
+        "name": "Secluded",
+        "type_flags": 7,
+        "updated_at": "2014-12-13T23:07:40.863Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.866Z",
+        "flag_value": 17179869184,
+        "id": 35,
+        "name": "Sewer Hookups",
+        "type_flags": 1,
+        "updated_at": "2014-12-13T23:07:40.866Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.868Z",
+        "flag_value": 34359738368,
+        "id": 36,
+        "name": "Shade",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.868Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.871Z",
+        "flag_value": 68719476736,
+        "id": 37,
+        "name": "Showers",
+        "type_flags": 7,
+        "updated_at": "2014-12-13T23:07:40.871Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.874Z",
+        "flag_value": 137438953472,
+        "id": 38,
+        "name": "Slide Outs",
+        "type_flags": 1,
+        "updated_at": "2014-12-13T23:07:40.874Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.877Z",
+        "flag_value": 274877906944,
+        "id": 39,
+        "name": "TV",
+        "type_flags": 4,
+        "updated_at": "2014-12-13T23:07:40.877Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.879Z",
+        "flag_value": 549755813888,
+        "id": 40,
+        "name": "Trash",
+        "type_flags": 7,
+        "updated_at": "2014-12-13T23:07:40.879Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.882Z",
+        "flag_value": 1099511627776,
+        "id": 41,
+        "name": "Waterfront",
+        "type_flags": 5,
+        "updated_at": "2014-12-13T23:07:40.882Z"
+    },
+    {
+        "created_at": "2014-12-13T23:07:40.884Z",
+        "flag_value": 2199023255552,
+        "id": 42,
+        "name": "WiFi",
+        "type_flags": 5,
+        "updated_at": "2014-12-13T23:07:40.884Z"
+    }
+]

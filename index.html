@@ -1,0 +1,107 @@
+<!doctype>
+
+<html>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="http://peterolson.github.com/BigInteger.js/BigInteger.min.js"></script>
+
+  <style>
+    body {  font: 15px arial, sans-serif; }
+    .bits { font-size: small; text-align: right }
+    .floaty { font-size: medium; position: fixed; top: 10px; right:10% }
+  </style>
+
+  <body>
+    <table class='amenities'>
+      <th> selected </th>
+      <th> Amenity </th> 
+      <th title="click to hide" class="bits toggle"> base2 flag value  </th>
+      <th title="click to hide" class="bits toggle"> base10 flag value  </th>
+      <th class="bits"> Associated types </th>
+    </table>
+
+    <div class='floaty'>
+      amenity flags (aka shopping cart) <br>
+      <input id="amenities_for_this_site" value='0' name="hypothetical_value_of_site" size=100> 
+      <div id="the_flags_in_binary"> binary string matching checkboxes selected: <br></div>
+    </div>
+  </body>
+
+  <script> 
+    //utilities
+
+    var type_map = function(bit_string) {
+      var k = 0,
+          types = ['rv', 'tent', 'lodge'];
+
+      return bit_string.split('')
+                .map(function(v) { 
+                      return (v == 1)? types[k++] : ''; 
+                      }).filter(function(t) { if(t != '') return t; });
+    }
+
+    var as_bits = function(n, size) {
+           size = size || 42,
+           mask = new Array(size).join(0).split(''), //string of zeros
+           as_binary = n.toString(2).split('').reverse().join('')
+       return as_binary +  mask.slice(0, size - as_binary.length).join(''); //keep each string the uniform in length 
+    };
+
+
+
+    $.get('amenities.json', function(amenities) { //get access to our model pass back from ajax call
+      
+
+
+      amenities_flags = new bigInt(0); //property with now amenities selected
+
+      //build a checkbox list off of the amenities
+      var markup = amenities.map(function(amenity) {
+          //console.log(amenity.name, as_bits(amenity.flag_value), amenity.flag_value);
+          return ['<tr class="amenity"> ',
+                    '<td><input class="knob" type="checkbox" name="', 
+                    amenity.name, '"></td><td>', amenity.name, '</td><td class="bits">',
+                    as_bits(amenity.flag_value), '</td><td class="bits">', amenity.flag_value, '</td><td class="bits">', type_map(as_bits(amenity.type_flags, 3)), '<td></tr>'].join('');
+      }).join('');
+
+
+      $('.amenities').append(markup);
+
+      //events 
+      //an for the given property the value of the cumulative flags
+      //changing this will change the checkboxes
+
+      $("#amenities_for_this_site").on('change', function() { 
+         var knobs = $('input[type=checkbox]'), counter = 0;
+
+         as_bits(parseInt($(this).val())).split('').map(function(bit) {   
+           knobs[counter++].checked = (bit == 1)? true : false;
+         });
+      });
+      
+      //changing a checkbox will recompute the value of the cumulative flags
+      //this is the only place where bigInt is needed as this is the
+      //accumulator 
+      $('input[type]=checkbox').on('change', function() {
+         var knobs = $('input[type=checkbox]'), counter = 0;
+         var selected_amenities = new bigInt(0);
+
+         $('input[type=checkbox]').each(function(i, obj){
+            if(obj.checked) selected_amenities = selected_amenities.add(new bigInt(2).pow(i)); //this assumes the order is based on what was sent by the
+                                                                     //the server ideally the order will not be that so perhaps
+                                                                     //going back to the model to determine the value
+                                                                     //this is jus a proof of concept
+         });
+
+         $('#amenities_for_this_site').val(selected_amenities.toString()); //the bigInt in string representation
+         $('#the_flags_in_binary').html(as_bits(parseInt(selected_amenities.toString())) + '<br>'); //the binary representation
+      });
+
+      //toggle column
+      $('.toggle').on('click', function() {
+            var id = $(this).index() + 1;
+            $("table tr th:nth-child("+id+"), table tr td:nth-child("+id+")").toggle();
+          });
+
+    });
+  </script>
+</html>
